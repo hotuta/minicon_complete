@@ -1,4 +1,6 @@
 class Event < ApplicationRecord
+  paginates_per 5
+  
   belongs_to :event_category
   has_many :purchases
   
